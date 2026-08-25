@@ -1,0 +1,15 @@
+/*
+
+# whitelist
+!/NoWanderingDomains/
+!/.github
+!/NoWanderingDomains.lean
+!/lakefile.toml
+!/lake-manifest.json
+!/lean-toolchain
+!/README.md
+!/LICENSE
+!/.gitignore
+# end of whitelist
+
+.DS_Store

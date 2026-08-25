@@ -1,0 +1,28 @@
+name = "NoWanderingDomains"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["NoWanderingDomains"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.0"
+
+[[require]]
+name = "RMT4"
+git = "https://github.com/will1491/RMT4.git"
+rev = "7e092cd5e347a1ee01afb165dd6ab043082e0f4d"
+
+[[require]]
+name = "carleson"
+git = "https://github.com/fpvandoorn/carleson.git"
+rev = "v4.33.0"
+
+[[lean_lib]]
+name = "NoWanderingDomains"

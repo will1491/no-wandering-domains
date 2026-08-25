@@ -1,0 +1,27 @@
+name: Lean Build CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    name: Build Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install elan and Lean 4.33.0
+        run: |
+          curl -O --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh
+          chmod +x elan-init.sh
+          ./elan-init.sh -y --default-toolchain leanprover/lean4:v4.33.0
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+
+      - name: Build with Lake
+        run: |
+          lake exe cache get
+          lake build
