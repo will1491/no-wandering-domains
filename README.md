@@ -54,6 +54,12 @@ and run it with `lake env lean <file>` from the repository root (after `lake bui
 
 Any other theorem in the library can be audited the same way.
 
+## Citation
+
+If you use this development, please cite the accompanying paper, [arXiv:2609.16027](https://arxiv.org/abs/2609.16027):
+
+*Formalization of Sullivan's No Wandering Domains Theorem in Lean*, by Ziang Li and Yusheng Luo.
+
 ## AI Disclaimer
 
 Generative AI (Claude) was used in the development of this codebase. The high-level architecture is human-designed; AI agents assisted with formalizing individual proofs and writing boilerplate. All definitions and core theorem statements were human-verified for correctness. Since all proofs are verified by Lean's type checker, AI-generated and human-written code are held to the same standard of correctness.

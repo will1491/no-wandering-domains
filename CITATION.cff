@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this development, please cite the accompanying paper, arXiv:2609.16027."
+title: "Formalization of Sullivan's No Wandering Domains Theorem in Lean"
+authors:
+  - family-names: Li
+    given-names: Ziang
+  - family-names: Luo
+    given-names: Yusheng
+preferred-citation:
+  type: article
+  title: "Formalization of Sullivan's No Wandering Domains Theorem in Lean"
+  authors:
+    - family-names: Li
+      given-names: Ziang
+    - family-names: Luo
+      given-names: Yusheng
+  year: 2026
+  journal: "arXiv preprint"
+  doi: 10.48550/arXiv.2609.16027
+  url: "https://arxiv.org/abs/2609.16027"

@@ -9,6 +9,7 @@
 !/lean-toolchain
 !/README.md
 !/LICENSE
+!/CITATION.cff
 !/.gitignore
 # end of whitelist
 
